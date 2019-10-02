@@ -4,7 +4,7 @@ before_script:
 - wget https://download.qemu.org/qemu-4.1.0.tar.xz
 - tar xvJf qemu-4.1.0.tar.xz
 - cd qemu-4.1.0
-- ./configure
+- ./configure --target-list=arm-softmmu
 - make -j$(nproc)
 - make install
 script:
