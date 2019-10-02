@@ -6,6 +6,6 @@ before_script:
 - cd qemu-4.1.0
 - ./configure --target-list=arm-softmmu
 - make -j$(nproc)
-- make install
+- sudo make install
 script:
-- qemu-system-x86_64 --version
+- qemu-system-arm --version
